@@ -17,9 +17,9 @@ function setTuneInInterval () {
 
   function checkLocationChange() {
     if(location != window.location.href){
-      location = window.location.href;
 
       if (isRadioPage()) {
+        location = window.location.href;
         window.setTimeout(function(){
           findAndInjectWebRadioLink()
         },500);
